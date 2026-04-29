@@ -224,11 +224,6 @@
         display: block;
     }
 
-    /* .menu__list.pop {
-        display: block;
-    } */
-
-
     .menu__list {
         position: fixed;
         top: 0;
