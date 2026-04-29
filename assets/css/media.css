@@ -51,6 +51,10 @@
     .contact__detail form {
         width: 100%;
     }
+
+    .service__list {
+        padding: 0.8rem;
+    }
 }
 
 @media (max-width:50rem)
