@@ -1,0 +1,418 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 87.5%;
+    /* 16 * 0.8750 = 14px */
+
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+.main__nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.logo {
+    margin-left: 80px;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #555555;
+    text-transform: uppercase;
+}
+
+.logo span {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+}
+
+.logo svg {
+    width: 20px;
+    height: 20px;
+}
+
+.logo sub {
+    font-size: 0.8rem;
+    color: #a6a6a6;
+}
+
+.main__nav ul {
+    margin-left: 100px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-weight: 300;
+    color: #8e8e8e;
+}
+
+.main__nav ul li a {
+    transition: 0.3s ease-in;
+}
+
+.main__nav ul li a:hover {
+    cursor: pointer;
+    color: #0079a8;
+}
+
+.main__menu {
+    display: none;
+}
+
+.log__in {
+    margin-left: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f56a56;
+}
+
+.log__in svg {
+    margin-right: 10px;
+    width: 24px;
+    height: 24px;
+    fill: #f56a56;
+    transition: 0.3s ease-in;
+}
+
+.log__in p {
+    transition: 0.3s ease-in;
+}
+
+.log__in svg:hover,
+.log__in p:hover {
+    cursor: pointer;
+    fill: #d04a35;
+    color: #d04a35;
+}
+
+.home {
+    position: relative;
+    padding-top: 90px;
+    height: 120vh;
+    overflow: hidden;
+}
+
+.home .carousel__container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.img__container {
+    width: 100%;
+    height: 100%;
+    flex-shrink: 0;
+}
+
+.img__container img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.content {
+    position: absolute;
+    inset: 0;
+    z-index: 99;
+    padding-top: 250px;
+    width: 39.25%;
+    display: flex;
+    justify-content: flex-end;
+    background: rgba(199, 199, 199, 0.4);
+}
+
+.content__info {
+    margin-right: 80px;
+    max-width: 270px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.home__content .content__info {
+    margin-right: 0px;
+}
+
+.content__info h2 {
+    margin-bottom: 50px;
+    font-size: 2.5rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.content__info h2 span {
+    display: block;
+    font-weight: 600;
+}
+
+.content__info p {
+    margin-bottom: 25px;
+    line-height: 1.8em;
+}
+
+.book__btn {
+    margin-right: 30px;
+    transition: 0.3s ease-in;
+}
+
+.book__btn:hover {
+    cursor: pointer;
+    background-color: #d04a35;
+}
+
+.btn {
+    border: none;
+    padding: 0.5rem;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #f56a56;
+
+}
+
+.service {
+    position: relative;
+    height: 85vh;
+    display: grid;
+    grid-template-columns: 0.8fr 1fr;
+
+}
+
+.service__list {
+    grid-column: 2;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.service__list h3 {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: #555555;
+    text-transform: uppercase;
+}
+
+.service__list h3 svg {
+    margin-right: 20px;
+    width: 30px;
+    height: 30px;
+}
+
+.service__list ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    list-style: none;
+
+}
+
+.service__list ul li p {
+    margin-left: 50px;
+}
+
+.about {
+
+    position: relative;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 0.8fr 1fr;
+    background-image: url("/assets/images/about-img.jpg ");
+    background-position: center center;
+    background-size: cover;
+}
+
+
+.about__content {
+    color: #fff;
+    background-color: unset;
+    text-shadow: 6px 2px 8px rgba(0, 0, 0, 1);
+
+}
+
+.text__content {
+    width: 100%;
+    height: 100%;
+    grid-column: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.text__content p {
+    margin-right: 50px;
+    font-size: 1.1rem;
+    text-shadow: 6px 2px 8px rgba(0, 0, 0, 1);
+    line-height: 1.8em;
+
+}
+
+.contact {
+    position: relative;
+    height: 130vh;
+    display: grid;
+    grid-template-columns: 0.625fr 1fr;
+    grid-template-rows: 1fr;
+    background: #ebe5e5;
+}
+
+.contact__content {
+    grid-column: 1;
+    grid-row: 1/3;
+    color: #000;
+    background-color: #fff;
+}
+
+
+.contact__detail {
+    grid-column: 2;
+    grid-row: 1/3;
+    padding: 2rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.schedule {
+    padding: 1rem;
+    display: flex;
+}
+
+.time__detail,
+.location {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.time__detail span,
+.location span {
+    margin-right: 10px;
+    font-weight: 600;
+}
+
+.time__detail h3,
+.location h3 {
+    text-transform: uppercase;
+    color: #555555;
+}
+
+.contact__detail iframe {
+    margin: 2rem 0;
+    border-radius: 8px;
+    border: 10px solid #fff;
+}
+
+.contact__detail form {
+    padding: 2rem;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+label {
+    color: #555555;
+}
+
+input[type="text"] {
+    border: none;
+    outline: none;
+    padding: 0.8rem;
+}
+
+textarea {
+    border: none;
+    min-height: 100px;
+    resize: none;
+}
+
+.form__btn {
+    margin: 1rem 0;
+    transition: 0.3s ease-in;
+}
+
+.form__btn:hover {
+    cursor: pointer;
+    background-color: #d04a35;
+
+}
+
+.up__arrow {
+    padding: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #28add1;
+}
+
+.up__arrow a {
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+
+}
+
+.up__arrow a svg {
+    width: 35px;
+    height: 35px;
+}
+
+.footer__container {
+    padding: 1rem 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .link {
+    min-width: 100px;
+    display: flex;
+    gap: 10px;
+}
+
+footer .link svg {
+    width: 24px;
+    height: 24px;
+}
+
+footer .link svg:hover {
+    cursor: pointer;
+}
+
+.menu__list {
+    display: none;
+}
